@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prescription Reminder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Prescription Reminder</h1>
+    <form id="medicineForm">
+      <input type="text" id="medicineName" placeholder="Medicine Name" required />
+      <input type="time" id="medicineTime" required />
+      <select id="specialConsideration">
+        <option value="None">None</option>
+        <option value="Before Meal">Before Meal</option>
+        <option value="After Meal">After Meal</option>
+      </select>
+      <button type="submit">Add Medicine</button>
+    </form>
+
+    <h2>Your Medicines</h2>
+    <ul id="medicineList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
